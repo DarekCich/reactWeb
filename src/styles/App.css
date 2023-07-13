@@ -17,46 +17,75 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.Navbar{
-  display: flex;
-  width: 100vw;
-  height: 8vh;
-  background-color: #00000050;
-  backdrop-filter: blur(2px);
-}
-.Navbar ul {
-  width: 100vw;
-  height: 8vh;
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  border-bottom: solid 1px whitesmoke;
-  justify-content: center;
-  align-items: center;
-}
-.Navbar ul li{
-  list-style: none;
-  padding-right: 5%;
-  max-width: 15vw;
-  min-width: 5vh;
-  font-size: calc(10px + 4vmin);
-  font-weight: 700;
-}
-.Navbar a{
- text-decoration: none;
- color: var(--navbar-font-color);
- text-shadow: black 0.1em 0.1em 0.2em
-}
+
 .homePageContent{
   border-radius: 10%;
-  margin-left: 15%;
-  margin-top: 5%;
-  padding: 10%;
-  width: 50%;
+  margin-left: 5%;
+  margin-top: 10%;
+  padding: 5%;
+  text-align: center;
+  width: 80%;
   color: #282c34;
   font-size: calc(10px + 8vmin);
   background-color: #282c342a;
   backdrop-filter: blur(2px);
   text-shadow: black 0.015em 0.015em 0.025em;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.App {
+  padding-top: 60px; /* Dodaj odstęp na górze, aby navbar nie zasłaniał treści */
+}
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5a9;
+  backdrop-filter: blur(2px);
+  padding: 10px;
+  transition: top 0.3s;
+}
+
+.Navbar.hidden {
+  top: -60px; /* Schowaj navbar poza obszar ekranu */
+}
+
+.Navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar ul li {
+  margin: 0 10px;
+}
+
+.Navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.Navbar ul li a:hover {
+  color: #000;
+}
+.ulHome{
+  margin: 5%;
+  text-align: left;
+  font-size: calc(10px + 7vmin);
+}
+.textOnHomePs{
+  padding-top: 15%;
+  font-size: calc(10px + 3vmin);
+}
+.textOnHomeTitle{
+  font-size: calc(10px + 7vmin);
+  font-weight: bold;
+}
+.textOnHome{
+  font-size: calc(10px + 7vmin);
 }

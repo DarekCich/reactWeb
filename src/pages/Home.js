@@ -2,7 +2,15 @@ import '../styles/App.css';
 export function Home(){
     return (
         <div className="homePageContent">
-            Strona zrobiona dla beki i z faktu nauki miłej zabawy
+            <div className='textOnHomeTitle'>Strona do Zabawy</div>
+            <div className='textOnHome'> jak widać strona zawiera:</div>
+            <ul className='ulHome'>
+                <li>koty</li>
+                <li>psy</li>
+                <li>memy</li>
+            </ul>
+            <div className='textOnHome'> Miłej zabawy</div>
+            <div className='textOnHomePs'> *tylko koty działają</div>
         </div>
     )
 }
