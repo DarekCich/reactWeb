@@ -10,24 +10,24 @@ function App() {
     <nav className='Navbar'>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="reactWeb/">Home</Link>
         </li>
         <li>
-          <Link to="/cats">Cats</Link>
+          <Link to="reactWeb/cats">Cats</Link>
         </li>
         <li>
-          <Link to="/dogs">Dogs</Link>
+          <Link to="reactWeb/dogs">Dogs</Link>
         </li>
         <li>
-          <Link to="/Memes">Memes</Link>
+          <Link to="reactWeb/Memes">Memes</Link>
         </li>
       </ul>
     </nav>
       <Routes>
-        <Route path="/"       element={<Home/>}/>
-        <Route path="/cats"   element={<Cats/>}/>
-        <Route path="/dogs"   element={<Dogs/>}/>
-        <Route path="/memes"  element={<Memes/>}/>
+        <Route path="reactWeb/"       element={<Home/>}/>
+        <Route path="reactWeb/cats"   element={<Cats/>}/>
+        <Route path="reactWeb/dogs"   element={<Dogs/>}/>
+        <Route path="reactWeb/memes"  element={<Memes/>}/>
       </Routes>
 
   </div>

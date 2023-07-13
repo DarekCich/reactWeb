@@ -18,7 +18,7 @@ export function Cats() {
         document.documentElement.scrollTop ||
         document.body.scrollTop;
 
-      if (scrollTop + windowHeight >= documentHeight - 100 && !isLoading) {
+      if (scrollTop + windowHeight >= documentHeight - 200 && !isLoading) {
         setPage(prevPage => prevPage + 1);
       }
     }
