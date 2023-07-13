@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { MyImg } from '../components/image';
+import { MyImg } from '../components/MyImg';
 
 export function Cats() {
   let [listOfCats, setListOfCats] = useState([]);
