@@ -1,0 +1,9 @@
+.dogPage{
+    display: flex;
+    max-width: 100vw;
+    height: 100vh;
+}
+.dogPage img{
+    display: flex;
+    max-width: 100vw;
+}

@@ -4,6 +4,7 @@ import { Cats } from './Cats';
 import { Dogs } from './Dogs';
 import { Memes } from './Memes';
 import { Home } from './Home';
+import '../styles/App.css';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
