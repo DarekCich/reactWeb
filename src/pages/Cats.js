@@ -11,14 +11,21 @@ export function Cats() {
     fetchCatImages();
 
     function handleScroll() {
+      const isMobile = window.matchMedia('(max-width: 768px)').matches; // Ustaw odpowiednią wartość szerokości ekranu dla widoku mobilnego
+    
+      let threshold = 200; // Prog odświeżania dla widoku desktopowego
+      if (isMobile) {
+        threshold = 400; // Prog odświeżania dla widoku mobilnego
+      }
+    
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
       const scrollTop =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop;
-
-      if (scrollTop + windowHeight >= documentHeight - 200 && !isLoading) {
+    
+      if (scrollTop + windowHeight >= documentHeight - threshold && !isLoading) {
         setPage(prevPage => prevPage + 1);
       }
     }

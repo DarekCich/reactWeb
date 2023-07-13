@@ -47,3 +47,16 @@
  color: var(--navbar-font-color);
  text-shadow: black 0.1em 0.1em 0.2em
 }
+.homePageContent{
+  border-radius: 10%;
+  margin-left: 15%;
+  margin-top: 5%;
+  padding: 10%;
+  width: 50%;
+  color: #282c34;
+  font-size: calc(10px + 8vmin);
+  background-color: #282c342a;
+  backdrop-filter: blur(2px);
+  text-shadow: black 0.015em 0.015em 0.025em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
